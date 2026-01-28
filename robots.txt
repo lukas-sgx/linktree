@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://lukas.soigneux.works/sitemap.xml
