@@ -1,43 +1,48 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8" />
-    <title>Lukas Soigneux - Développeur Logiciel & Cybersécurité | Epitech</title>
+    <title>Lukas Soigneux - System Software Developer | Epitech</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Lukas Soigneux - Étudiant Epitech spécialisé en cybersécurité et systèmes embarqués. Développeur full-stack Go, TypeScript, React. MidnightOps, GitHub, projets et CV." />
-    <meta name="keywords" content="développeur, cybersécurité, full-stack, Go, TypeScript, React, Epitech, portfolio" />
+    <meta name="description" content="Portfolio of Lukas Soigneux, an Epitech student specializing in low-level system software development, assembly, C, Rust, NixOS, and cybersecurity." />
+    <meta name="keywords" content="developer, system, ASM, C, Rust, Go, Epitech, portfolio, ARM7TDMI, kernel, NixOS, cybersecurity" />
     <meta name="author" content="Lukas Soigneux" />
     <meta name="robots" content="index, follow" />
-    <meta name="language" content="French" />
+
     <meta property="og:type" content="profile" />
-    <meta property="og:url" content="https://lukas-soigneux.fr/index.html" />
-    <meta property="og:title" content="Lukas Soigneux - Développeur Full-Stack & Cybersécurité" />
-    <meta property="og:description" content="Portfolio de Lukas Soigneux : Développeur full-stack spécialisé en cybersécurité, systèmes embarqués et infrastructure" />
-    <meta property="og:locale" content="fr_FR" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Lukas Soigneux - Dev Full-Stack & Cybersec" />
-    <meta name="twitter:description" content="Portfolio et projets : MidnightOps, Go, TypeScript, React, Docker" />
+    <meta property="og:url" content="https://lukas-soigneux.works/" />
+    <meta property="og:title" content="Lukas Soigneux - System Software Engineering" />
+    <meta property="og:description" content="Low-level software engineering portfolio: GBA-SDK, NixOS contributor, C/Rust, Assembly, and system architecture." />
+    <meta property="og:image" content="https://lukas-soigneux.works/assets/profil.jpg" />
+    <meta property="og:locale" content="en_US" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Lukas Soigneux - System Software Dev" />
+    <meta name="twitter:description" content="Portfolio and projects: GBA-SDK, NixOS, Go, Docker, ASM, ARM7TDMI." />
+
     <meta name="google-site-verification" content="googlee96dd80964b639a4" />
     <link rel="canonical" href="https://lukas-soigneux.fr/index.html" />
-    <link rel="alternate" hreflang="fr" href="https://lukas-soigneux.fr/index.html" />
+    <link rel="alternate" hreflang="en" href="https://lukas-soigneux.works/index.html" />
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="style.css" />
+
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Lukas Soigneux",
-        "url": "https://lukas-soigneux.fr",
-        "image": "https://lukas-soigneux.fr/assets/profil.jpg",
-        "jobTitle": "Étudiant Epitech - Développeur Logiciel & Cybersécurité",
-        "description": "Étudiant Epitech spécialisé en cybersécurité, systèmes embarqués et développement logiciel",
+        "url": "https://lukas-soigneux.works",
+        "image": "https://lukas-soigneux.works/assets/profil.jpg",
+        "jobTitle": "Epitech Student - System Software Developer",
+        "description": "Epitech student focused on low-level, NixOS ecosystem, and system software development",
         "email": "mailto:lukas.soigneux@epitech.eu",
         "sameAs": [
             "https://github.com/lukas-sgx",
             "https://www.linkedin.com/in/lukas-soigneux/"
         ],
-        "knowsAbout": ["Cybersécurité", "Go", "TypeScript", "React", "Développement Full-Stack", "Docker", "PostgreSQL", "x86-64 Assembly", "Linux"],
+        "knowsAbout": ["Cybersecurity", "Go", "C", "Kernel", "Rust", "Docker", "ARM", "x86-64 Assembly", "Linux", "NixOS"],
         "workLocation": {
             "@type": "Place",
             "name": "Epitech"
@@ -45,141 +50,140 @@
     }
     </script>
 </head>
-<body class="min-h-screen bg-slate-950 text-slate-100 antialiased">
-    <div class="pointer-events-none fixed inset-0 overflow-hidden">
-        <div class="absolute -top-40 -left-40 h-80 w-80 rounded-full bg-cyan-500/10 blur-3xl"></div>
-        <div class="absolute top-40 -right-40 h-80 w-80 rounded-full bg-emerald-500/10 blur-3xl"></div>
-        <div class="absolute -bottom-40 left-1/2 h-80 w-80 -translate-x-1/2 rounded-full bg-indigo-500/10 blur-3xl"></div>
+<body class="min-h-screen bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-slate-950">
+
+    <div class="pointer-events-none fixed inset-0 overflow-hidden z-0">
+        <div class="absolute -top-40 -left-40 h-96 w-96 rounded-full bg-cyan-500/10 blur-[100px]"></div>
+        <div class="absolute top-40 -right-40 h-96 w-96 rounded-full bg-emerald-500/10 blur-[100px]"></div>
+        <div class="absolute -bottom-40 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-indigo-500/10 blur-[100px]"></div>
     </div>
-  <main class="relative min-h-screen flex items-center justify-center px-4" role="main">
-    <section class="w-full max-w-2xl bg-slate-950/80 border border-slate-800 rounded-3xl shadow-[0_24px_80px_rgba(0,0,0,0.85)] p-6 sm:p-8 backdrop-blur-xl">
-      <header class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
-        <div class="flex items-center gap-4">
-          <div class="relative">
-            <div class="h-16 w-16 rounded-2xl bg-slate-900 border border-slate-700 flex items-center justify-center overflow-hidden">
-              <img src="assets/profil.jpg" alt="Lukas Soigneux - Développeur et étudiant Epitech" class="h-16 w-16 rounded-2xl" loading="lazy" />
-            </div>
-          </div>
-          <div>
-            <h1 class="text-xl sm:text-2xl font-semibold tracking-tight">
-              Lukas Soigneux
-            </h1>
-            <p class="text-sm text-slate-400 mt-1">
-              Étudiant Epitech · Cybersécurité & Systèmes embarqués
-            </p>
-          </div>
-        </div>
-        <div class="flex items-center gap-2 text-[11px] text-slate-400 justify-end">
-          <span class="inline-flex items-center gap-1 rounded-full border border-slate-700/80 bg-slate-900/80 px-2.5 py-1">
-            <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" aria-hidden="true"></span>
-            <a href="mailto:lukas.soigneux@epitech.eu" title="Envoyer un email à Lukas"><span>Disponible pour entretien</span></a>
-          </span>
-        </div>
-      </header>
-      <section class="mb-6">
-        <p class="text-sm text-slate-200">
-          Actuellement en 1ère année, je me spécialise dans la programmation bas niveau tout en m’intéressant au monde qui m’entoure.
-        </p>
-        <div class="mt-3 flex flex-wrap gap-2 text-[11px]">
-          <span class="rounded-full bg-slate-900/80 border border-slate-700 px-2.5 py-1 text-slate-300">
-            C · x86‑64
-          </span>
-          <span class="rounded-full bg-slate-900/80 border border-slate-700 px-2.5 py-1 text-slate-300">
-            TypeScript · NodeJs · React · PHP
-          </span>
-          <span class="rounded-full bg-slate-900/80 border border-slate-700 px-2.5 py-1 text-slate-300">
-            Docker · GitHub Actions
-          </span>
-        <span class="rounded-full bg-slate-900/80 border border-slate-700 px-2.5 py-1 text-slate-300">
-            PostgreSQL · Redis · Mysql
-        </span>
-        <span class="rounded-full bg-slate-900/80 border border-slate-700 px-2.5 py-1 text-slate-300">
-            Golang · Python
-        </span>
-        </div>
-      </section>
-      <nav id="links" class="mb-4 space-y-2.5 text-sm" aria-label="Liens principaux">
-        <a href="https://github.com/lukas-sgx" rel="noopener noreferrer" title="Voir mon profil GitHub - Projets et contributions"
-          class="group flex items-center gap-3 rounded-2xl border border-emerald-400/70 bg-gradient-to-r from-emerald-500 via-emerald-400 to-cyan-400 px-4 py-3.5 text-slate-950 shadow-lg shadow-emerald-500/40 transition hover:shadow-emerald-400/70 hover:-translate-y-0.5">
-          <div
-            class="flex h-9 w-9 items-center justify-center rounded-xl bg-emerald-900/10 text-slate-950/80">
-            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-          </div>
-          <div class="flex-1 text-left">
-            <div class="font-semibold tracking-tight">GitHub</div>
-            <div class="text-[11px] font-medium uppercase tracking-wide opacity-80">
-              Projets · contributions · code public
-            </div>
-          </div>
-          <span class="text-xs font-semibold uppercase tracking-wide opacity-80 group-hover:opacity-100">
-            Principal
-          </span>
-        </a>
-        <a href="projects" title="Voir mes projets - Portfolio complet"
-          class="group flex items-center gap-3 rounded-2xl border border-indigo-400/70 bg-gradient-to-r from-indigo-500 via-purple-400 to-pink-400 px-4 py-3.5 text-slate-950 shadow-lg shadow-indigo-500/40 transition hover:shadow-indigo-400/70 hover:-translate-y-0.5">
-          <div
-            class="flex h-9 w-9 items-center justify-center rounded-xl bg-indigo-900/20 text-slate-950/80">
-            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-          </div>
-          <div class="flex-1 text-left">
-            <div class="font-semibold tracking-tight">Voir mes Projets</div>
-            <div class="text-[11px] font-medium uppercase tracking-wide opacity-80">
-              Détails techniques
-            </div>
-          </div>
-          <span class="text-xs font-semibold uppercase tracking-wide opacity-80 group-hover:opacity-100">
-            Principal
-          </span>
-        </a>
-        <a href="https://www.linkedin.com/in/lukas-soigneux/" rel="noopener noreferrer" title="Mon profil LinkedIn - Parcours et expériences"
-          class="group flex items-center gap-3 rounded-2xl border border-slate-700 bg-slate-950/90 px-4 py-3.5 text-slate-100 shadow-sm shadow-black/70 transition hover:border-cyan-400 hover:bg-slate-900 hover:-translate-y-0.5">
-          <div
-            class="flex h-9 w-9 items-center justify-center rounded-xl bg-slate-900 text-sky-400">
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.39v-1.2h-2.5v8.5h2.5v-4.34c0-.77.62-1.4 1.4-1.4a1.4 1.4 0 0 1 1.4 1.4v4.34h2.5M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.5H5.5v8.5h2.77z"/></svg>
-          </div>
-          <div class="flex-1 text-left">
-            <div class="font-semibold tracking-tight">LinkedIn</div>
-            <div class="text-[11px] text-slate-400">
-              Parcours, expériences, recommandations
-            </div>
-          </div>
-          <span class="text-[11px] text-slate-400 group-hover:text-cyan-300">
-            Réseau professionnel
-          </span>
-        </a>
-        <a href="assets/CV_Lukas_Soigneux.pdf" title="Télécharger mon CV en PDF - Détails professionnels"
-          class="group flex items-center gap-3 rounded-2xl border border-slate-700 bg-slate-950/90 px-4 py-3.5 text-slate-100 shadow-sm shadow-black/70 transition hover:border-emerald-400 hover:bg-slate-900 hover:-translate-y-0.5">
-          <div
-            class="flex h-9 w-9 items-center justify-center rounded-xl bg-slate-900 text-emerald-300">
-            <span class="text-base">CV</span>
-          </div>
-          <div class="flex-1 text-left">
-            <div class="font-semibold tracking-tight">Voir mon CV</div>
-            <div class="text-[11px] text-slate-400">
-              PDF · projets · expériences techniques
-            </div>
-          </div>
-          <span class="text-[11px] text-slate-400 group-hover:text-emerald-300">
-            PDF
-          </span>
-        </a>
-        <a href="mailto:lukas.soigneux@epitech.eu" title="M'envoyer un email - Disponible pour discuter"
-          class="group flex items-center gap-3 rounded-2xl border border-slate-700 bg-slate-950/90 px-4 py-3.5 text-slate-100 shadow-sm shadow-black/70 transition hover:border-emerald-400 hover:bg-slate-900 hover:-translate-y-0.5">
-          <div
-            class="flex h-9 w-9 items-center justify-center rounded-xl bg-slate-900 text-emerald-300">
-            <span class="text-base">@</span>
-          </div>
-          <div class="flex-1 text-left">
-            <div class="font-semibold tracking-tight">Me contacter</div>
-            <div class="text-[11px] text-slate-400">
-              Réponse rapide · FR/EN
-            </div>
-          </div>
-          <span class="text-[11px] text-slate-400 group-hover:text-emerald-300">
-            Email
-          </span>
-        </a>
-      </nav>
-    </section>
+
+    <main class="relative min-h-screen flex items-center justify-center px-4 py-12 z-10" role="main">
+        <section class="w-full max-w-2xl bg-slate-900/40 border border-slate-800/80 rounded-3xl shadow-[0_24px_80px_rgba(0,0,0,0.85)] p-6 sm:p-8 backdrop-blur-xl">
+
+            <header class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
+                <div class="flex items-center gap-4">
+                    <div class="relative group">
+                        <div class="absolute -inset-0.5 bg-gradient-to-r from-cyan-500 to-emerald-500 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-300"></div>
+                        <div class="relative h-16 w-16 rounded-2xl bg-slate-950 border border-slate-800 flex items-center justify-center overflow-hidden">
+                            <img src="assets/profil.jpg" alt="Lukas Soigneux" class="h-16 w-16 object-cover" loading="lazy" />
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="text-xl sm:text-2xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-slate-100 to-slate-300">
+                            Lukas Soigneux
+                        </h1>
+                        <p class="text-sm font-medium text-cyan-400 mt-0.5">
+                            Currently 2nd-Year Epitech Student · System Software Engineering
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex items-center sm:justify-end">
+                    <span class="inline-flex items-center gap-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/5 px-3 py-1 text-xs text-emerald-400 font-medium backdrop-blur-md">
+                        <span class="h-1.5 w-1.5 rounded-full bg-emerald-400 animate-pulse" aria-hidden="true"></span>
+                        <a href="mailto:lukas.soigneux@epitech.eu" title="Contact me via email">Available for job interview</a>
+                    </span>
+                </div>
+            </header>
+
+            <section class="mb-8 border-b border-slate-800/60 pb-6">
+                <p class="text-sm text-slate-300 leading-relaxed">
+                    Passionate about low-level development, operating systems, and infrastructure reproducibility. Active open-source contributor.
+                </p>
+
+                <div class="mt-4 space-y-2.5">
+                    <div class="flex flex-wrap gap-2 items-center">
+                        <span class="text-[10px] uppercase font-bold tracking-wider text-slate-500 w-full sm:w-28 shrink-0">Low level & System:</span>
+                        <span class="rounded-lg bg-slate-950 border border-slate-800 px-2.5 py-1 text-xs text-slate-300 font-mono">Rust</span>
+                        <span class="rounded-lg bg-slate-950 border border-slate-800 px-2.5 py-1 text-xs text-slate-300 font-mono">C</span>
+                        <span class="rounded-lg bg-slate-950 border border-slate-800 px-2.5 py-1 text-xs text-slate-300 font-mono">C++</span>
+                        <span class="rounded-lg bg-slate-950 border border-slate-800 px-2.5 py-1 text-xs text-slate-300 font-mono">Assembly</span>
+                        <span class="rounded-lg bg-slate-950 border border-slate-800 px-2.5 py-1 text-xs text-slate-300 font-mono">Python</span>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2 items-center">
+                        <span class="text-[10px] uppercase font-bold tracking-wider text-slate-500 w-full sm:w-28 shrink-0">Infra & DevOps:</span>
+                        <span class="rounded-lg bg-slate-950 border border-slate-800 px-2.5 py-1 text-xs text-slate-400 font-mono">Nix / NixOS</span>
+                        <span class="rounded-lg bg-slate-950 border border-slate-800 px-2.5 py-1 text-xs text-slate-400 font-mono">Golang</span>
+                        <span class="rounded-lg bg-slate-950 border border-slate-800 px-2.5 py-1 text-xs text-slate-400 font-mono">CI/CD</span>
+                        <span class="rounded-lg bg-slate-950 border border-slate-800 px-2.5 py-1 text-xs text-slate-400 font-mono">Docker / K8s</span>
+                        <span class="rounded-lg bg-slate-950 border border-slate-800 px-2.5 py-1 text-xs text-slate-400 font-mono">Cloudflare</span>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2 items-center">
+                        <span class="text-[10px] uppercase font-bold tracking-wider text-slate-500 w-full sm:w-28 shrink-0">Web & Data:</span>
+                        <span class="rounded-lg bg-slate-950 border border-slate-800 px-2.5 py-1 text-xs text-slate-500 font-mono">Nodejs</span>
+                        <span class="rounded-lg bg-slate-950 border border-slate-800 px-2.5 py-1 text-xs text-slate-500 font-mono">TypeScript</span>
+                        <span class="rounded-lg bg-slate-950 border border-slate-800 px-2.5 py-1 text-xs text-slate-500 font-mono">SQL / Redis</span>
+                        <span class="rounded-lg bg-slate-950 border border-slate-800 px-2.5 py-1 text-xs text-slate-500 font-mono">HTML/CSS/PHP</span>
+                    </div>
+                </div>
+            </section>
+
+            <nav id="links" class="space-y-3 text-sm" aria-label="Social Links and Repositories">
+
+                <a href="https://github.com/lukas-sgx" target="_blank" rel="noopener noreferrer" title="Lukas' GitHub Profile"
+                   class="group flex items-center gap-4 rounded-2xl border border-emerald-500/50 bg-gradient-to-r from-emerald-600/20 via-emerald-500/10 to-cyan-500/10 px-4 py-3.5 text-slate-100 shadow-lg shadow-emerald-950/20 transition duration-300 hover:border-emerald-400 hover:shadow-emerald-500/10 hover:-translate-y-0.5">
+                    <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-slate-950 border border-slate-800 text-emerald-400 group-hover:text-emerald-300 transition-colors">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </div>
+                    <div class="flex-1 text-left">
+                        <div class="font-semibold tracking-tight text-slate-200 group-hover:text-white">GitHub Profile</div>
+                        <div class="text-xs text-slate-400 font-mono">github.com/lukas-sgx</div>
+                    </div>
+                    <span class="text-xs font-semibold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">
+                        Code
+                    </span>
+                </a>
+
+                <a href="https://github.com/lukas-sgx/GBA-SDK" target="_blank" rel="noopener noreferrer" title="View GBA-SDK Repository"
+                   class="group flex items-center gap-4 rounded-2xl border border-slate-800 bg-slate-950/40 px-4 py-3.5 text-slate-100 transition duration-300 hover:border-cyan-500/50 hover:bg-slate-900/60 hover:-translate-y-0.5">
+                    <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-slate-950 border border-slate-800 text-cyan-400">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 5h10a2 2 0 012 2v10a2 2 0 01-2 2H7a2 2 0 01-2-2V7a2 2 0 012-2zM9 9h6v6H9V9z"/></svg>
+                    </div>
+                    <div class="flex-1 text-left">
+                        <div class="font-semibold tracking-tight text-slate-300 group-hover:text-cyan-400 transition-colors">GBA - SDK Project</div>
+                        <div class="text-xs text-slate-400">Embedded toolchain and bare-metal execution framework for ARM7TDMI</div>
+                    </div>
+                    <span class="text-[10px] font-mono text-slate-500 group-hover:text-cyan-300 transition-colors">ARM / C</span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/lukas-soigneux/" target="_blank" rel="noopener noreferrer" title="LinkedIn Profile"
+                   class="group flex items-center gap-4 rounded-2xl border border-slate-800 bg-slate-950/40 px-4 py-3.5 text-slate-100 transition duration-300 hover:border-blue-500/50 hover:bg-slate-900/60 hover:-translate-y-0.5">
+                    <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-slate-950 border border-slate-800 text-blue-400">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.39v-1.2h-2.5v8.5h2.5v-4.34c0-.77.62-1.4 1.4-1.4a1.4 1.4 0 0 1 1.4 1.4v4.34h2.5M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.5H5.5v8.5h2.77z"/></svg>
+                    </div>
+                    <div class="flex-1 text-left">
+                        <div class="font-semibold tracking-tight text-slate-300 group-hover:text-blue-400 transition-colors">LinkedIn</div>
+                        <div class="text-xs text-slate-400">Professional networking and academic updates</div>
+                    </div>
+                </a>
+
+                <a href="assets/CV_Lukas_Soigneux.pdf" target="_blank" title="Download Resume PDF"
+                   class="group flex items-center gap-4 rounded-2xl border border-slate-800 bg-slate-950/40 px-4 py-3.5 text-slate-100 transition duration-300 hover:border-purple-500/50 hover:bg-slate-900/60 hover:-translate-y-0.5">
+                    <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-slate-950 border border-slate-800 text-purple-400">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+                    </div>
+                    <div class="flex-1 text-left">
+                        <div class="font-semibold tracking-tight text-slate-300 group-hover:text-purple-400 transition-colors">Curriculum Vitae</div>
+                        <div class="text-xs text-slate-400">View or download my standalone technical CV</div>
+                    </div>
+                    <span class="text-[10px] font-mono text-slate-500">PDF</span>
+                </a>
+
+                <a href="mailto:lukas.soigneux@epitech.eu" title="Email Lukas"
+                   class="group flex items-center gap-4 rounded-2xl border border-slate-800 bg-slate-950/40 px-4 py-3.5 text-slate-100 transition duration-300 hover:border-emerald-500/50 hover:bg-slate-900/60 hover:-translate-y-0.5">
+                    <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-slate-950 border border-slate-800 text-emerald-400">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 002-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                    </div>
+                    <div class="flex-1 text-left">
+                        <div class="font-semibold tracking-tight text-slate-300 group-hover:text-emerald-400 transition-colors">Get in Touch</div>
+                        <div class="text-xs text-slate-400">lukas.soigneux@epitech.eu · Fast asynchronous response</div>
+                    </div>
+                </a>
+            </nav>
+        </section>
+    </main>
 </body>
 </html>
