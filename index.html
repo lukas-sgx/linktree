@@ -33,165 +33,210 @@
         .font-mono { font-family: 'JetBrains Mono', monospace; }
 
         .bg-paper {
-            background-color: #f7f7f5;
+            background-color: #fcfcfb;
             background-image: radial-gradient(rgba(0,0,0,0.03) 1px, transparent 0);
             background-size: 24px 24px;
         }
 
+        @media (prefers-color-scheme: dark) {
+            .bg-paper {
+                background-color: #0b0a09;
+                background-image: radial-gradient(rgba(255,255,255,0.015) 1px, transparent 0);
+            }
+        }
+
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
+            from { opacity: 0; transform: translateY(8px); }
             to { opacity: 1; transform: translateY(0); }
         }
         .animate-fade-in {
-            animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
         }
     </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Lukas Soigneux",
+      "jobTitle": "Systems Software Engineer",
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Epitech Nice"
+      },
+      "knowsAbout": [
+        "Systems Software Engineering",
+        "Low-Level Development",
+        "C programming",
+        "Assembly Language",
+        "ARM7TDMI",
+        "Rust programming",
+        "NixOS",
+        "Kernel Development",
+        "Cybersecurity"
+      ],
+      "url": "https://lukas-soigneux.works/",
+      "sameAs": [
+        "https://github.com/lukas-sgx",
+        "https://www.linkedin.com/in/lukas-soigneux/"
+      ]
+    }
+    </script>
 </head>
-<body class="min-h-screen bg-paper text-stone-800 antialiased selection:bg-stone-200 selection:text-stone-900">
+<body class="min-h-screen bg-paper text-stone-800 dark:text-stone-200 antialiased selection:bg-stone-200 dark:selection:bg-stone-800 selection:text-stone-900 dark:selection:text-stone-50">
 
-    <main class="relative min-h-screen flex items-center justify-center px-4 py-16 z-10 animate-fade-in" role="main">
-        <section class="w-full max-w-2xl bg-[#fcfcfb] border border-stone-200/80 rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-6 sm:p-10 transition-all duration-500 hover:shadow-[0_20px_50px_rgba(0,0,0,0.06)]">
+    <main class="relative min-h-screen flex items-center justify-center px-4 py-12 z-10 animate-fade-in" role="main">
+        <section class="w-full max-w-2xl bg-[#fcfcfb] dark:bg-[#141210] border border-stone-200 dark:border-stone-800/80 rounded-2xl shadow-[0_4px_30px_rgb(0,0,0,0.02)] dark:shadow-[0_20px_50px_rgba(0,0,0,0.4)] p-6 sm:p-10 transition-all duration-500">
 
-            <header class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-6 mb-10">
+            <header class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 mb-10">
                 <div class="flex items-center gap-5">
                     <div class="relative group">
-                        <div class="absolute -inset-0.5 bg-stone-300 rounded-full blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
-                        <div class="relative h-20 w-20 rounded-full bg-stone-100 border border-stone-200 flex items-center justify-center overflow-hidden transition-transform duration-500 group-hover:scale-[1.03]">
-                            <img src="assets/profil.jpg" alt="Lukas Soigneux" class="h-20 w-20 object-cover filter grayscale" loading="lazy" />
+                        <div class="absolute -inset-0.5 bg-stone-400 dark:bg-stone-600 rounded-full blur opacity-10 group-hover:opacity-30 transition duration-500"></div>
+                        <div class="relative h-20 w-20 rounded-full bg-stone-100 dark:bg-stone-900 border border-stone-200/60 dark:border-stone-800 flex items-center justify-center overflow-hidden transition-transform duration-500 group-hover:scale-[1.02]">
+                            <img src="assets/profil.jpg" alt="Lukas Soigneux" class="h-20 w-20 object-cover filter grayscale dark:brightness-95 dark:contrast-112" loading="lazy" />
                         </div>
                     </div>
                     <div>
-                        <h1 class="text-2xl sm:text-3xl font-serif tracking-tight text-stone-900">
+                        <h1 class="text-2xl sm:text-3xl font-serif tracking-tight text-stone-900 dark:text-stone-50">
                             Lukas Soigneux
                         </h1>
-                        <p class="text-sm font-mono text-stone-500 mt-1.5">
-                            Systems Software Engineering Student<br class="sm:hidden" /> & Student Ambassador <span class="text-stone-400">@Epitech Nice</span>
+                        <p class="text-sm font-mono text-stone-500 dark:text-stone-400 mt-1">
+                            Systems Software Engineering Student<br class="sm:hidden" /> & Student Ambassador <span class="text-stone-400 dark:text-stone-500">@Epitech Nice</span>
                         </p>
                     </div>
                 </div>
 
                 <div class="flex items-center sm:justify-end">
-                    <a href="mailto:lukas.soigneux@epitech.eu" title="Contact me via email" class="inline-flex items-center gap-2 rounded-full border border-stone-300 bg-stone-50 px-3 py-1 text-xs text-stone-600 font-mono transition-colors duration-300 hover:border-stone-400 hover:bg-stone-100/80">
-                        <span class="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" aria-hidden="true"></span>
+                    <a href="mailto:lukas.soigneux@epitech.eu" title="Contact me via email" class="inline-flex items-center gap-2 rounded-full border border-stone-200 dark:border-emerald-500/30 bg-stone-50/50 dark:bg-emerald-950/10 px-3 py-1.5 text-xs text-stone-600 dark:text-emerald-400 font-mono transition-all duration-300 hover:border-stone-400 dark:hover:border-emerald-400 hover:bg-stone-100 dark:hover:bg-emerald-950/20 shadow-sm">
+                        <span class="relative flex h-2 w-2">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                        </span>
                         Available for interviews
                     </a>
                 </div>
             </header>
 
-            <section class="mb-10 border-b border-stone-200 pb-8">
-                <p class="text-base font-serif text-stone-700 leading-relaxed italic">
+            <section class="mb-8">
+                <p class="text-base font-serif text-stone-700 dark:text-stone-300 leading-relaxed italic">
                     "Driven by hardware-software co-design, OS internals, and automated configurations, I focus on building performant and reproducible systems."
                 </p>
 
-                <div class="mt-10 space-y-5 border-t border-stone-100 pt-6">
+                <div class="w-full mt-8 border-b border-dashed border-zinc-300 dark:border-stone-700"></div>
+
+                <div class="mt-8 space-y-4">
                     
-                    <div class="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4">
-                        <span class="text-[10px] font-mono uppercase font-bold tracking-wider text-stone-400 w-36 shrink-0 pt-1">Low-Level & Kernel</span>
+                    <div class="flex flex-col sm:flex-row sm:items-start gap-1.5 sm:gap-4">
+                        <span class="text-[10px] font-mono uppercase font-bold tracking-wider text-stone-400 dark:text-stone-500 w-36 shrink-0 pt-1.5">Low-Level & Kernel</span>
                         <div class="flex flex-wrap gap-1.5">
-                            <span class="rounded border border-stone-200 bg-stone-50 px-2.5 py-0.5 text-xs text-stone-700 font-mono font-medium transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:border-stone-400">C</span>
-                            <span class="rounded border border-stone-200 bg-stone-50 px-2.5 py-0.5 text-xs text-stone-700 font-mono font-medium transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:border-stone-400">ASM (ARM / x86)</span>
-                            <span class="rounded border border-stone-200 bg-stone-50 px-2.5 py-0.5 text-xs text-stone-700 font-mono font-medium transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:border-stone-400">Rust</span>
-                            <span class="rounded border border-stone-200 bg-stone-50 px-2.5 py-0.5 text-xs text-stone-700 font-mono font-medium transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:border-stone-400">Go</span>
+                            <span class="rounded border border-stone-200 dark:border-stone-800 bg-stone-50 dark:bg-stone-900/60 px-2.5 py-0.5 text-xs text-stone-700 dark:text-stone-300 font-mono">C</span>
+                            <span class="rounded border border-stone-200 dark:border-stone-800 bg-stone-50 dark:bg-stone-900/60 px-2.5 py-0.5 text-xs text-stone-700 dark:text-stone-300 font-mono">ASM (ARM / x86)</span>
+                            <span class="rounded border border-stone-200 dark:border-stone-800 bg-stone-50 dark:bg-stone-900/60 px-2.5 py-0.5 text-xs text-stone-700 dark:text-stone-300 font-mono">Rust</span>
+                            <span class="rounded border border-stone-200 dark:border-stone-800 bg-stone-50 dark:bg-stone-900/60 px-2.5 py-0.5 text-xs text-stone-700 dark:text-stone-300 font-mono">Go</span>
                         </div>
                     </div>
 
-                    <div class="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4">
-                        <span class="text-[10px] font-mono uppercase font-bold tracking-wider text-stone-400 w-36 shrink-0 pt-1">OS & Sys Tooling</span>
+                    <div class="flex flex-col sm:flex-row sm:items-start gap-1.5 sm:gap-4">
+                        <span class="text-[10px] font-mono uppercase font-bold tracking-wider text-stone-400 dark:text-stone-500 w-36 shrink-0 pt-1.5">OS & Sys Tooling</span>
                         <div class="flex flex-wrap gap-1.5">
-                            <span class="rounded border border-stone-200 bg-stone-50 px-2.5 py-0.5 text-xs text-stone-600 font-mono transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:border-stone-400">Linux</span>
-                            <span class="rounded border border-stone-200 bg-stone-50 px-2.5 py-0.5 text-xs text-stone-600 font-mono transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:border-stone-400">NixOS</span>
-                            <span class="rounded border border-stone-200 bg-stone-50 px-2.5 py-0.5 text-xs text-stone-600 font-mono transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:border-stone-400">GDB</span>
-                            <span class="rounded border border-stone-200 bg-stone-50 px-2.5 py-0.5 text-xs text-stone-600 font-mono transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:border-stone-400">QEMU</span>
-                            <span class="rounded border border-stone-200 bg-stone-50 px-2.5 py-0.5 text-xs text-stone-600 font-mono transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:border-stone-400">Make / CMake</span>
+                            <span class="rounded border border-stone-200 dark:border-stone-800 bg-stone-50 dark:bg-stone-900/60 px-2.5 py-0.5 text-xs text-stone-600 dark:text-stone-400 font-mono">Linux</span>
+                            <span class="rounded border border-stone-200 dark:border-stone-800 bg-stone-50 dark:bg-stone-900/60 px-2.5 py-0.5 text-xs text-stone-600 dark:text-stone-400 font-mono">NixOS</span>
+                            <span class="rounded border border-stone-200 dark:border-stone-800 bg-stone-50 dark:bg-stone-900/60 px-2.5 py-0.5 text-xs text-stone-600 dark:text-stone-400 font-mono">GDB</span>
+                            <span class="rounded border border-stone-200 dark:border-stone-800 bg-stone-50 dark:bg-stone-900/60 px-2.5 py-0.5 text-xs text-stone-600 dark:text-stone-400 font-mono">QEMU</span>
+                            <span class="rounded border border-stone-200 dark:border-stone-800 bg-stone-50 dark:bg-stone-900/60 px-2.5 py-0.5 text-xs text-stone-600 dark:text-stone-400 font-mono">Make / CMake</span>
                         </div>
                     </div>
 
-                    <div class="flex flex-col sm:flex-row sm:items-start gap-2 sm:gap-4">
-                        <span class="text-[10px] font-mono uppercase font-bold tracking-wider text-stone-400 w-36 shrink-0 pt-1">Infra & DevOps</span>
+                    <div class="flex flex-col sm:flex-row sm:items-start gap-1.5 sm:gap-4">
+                        <span class="text-[10px] font-mono uppercase font-bold tracking-wider text-stone-400 dark:text-stone-500 w-36 shrink-0 pt-1.5">Infra & DevOps</span>
                         <div class="flex flex-wrap gap-1.5">
-                            <span class="rounded border border-stone-200 bg-stone-50 px-2.5 py-0.5 text-xs text-stone-600 font-mono transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:border-stone-400">Docker</span>
-                            <span class="rounded border border-stone-200 bg-stone-50 px-2.5 py-0.5 text-xs text-stone-600 font-mono transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:border-stone-400">Kubernetes</span>
-                            <span class="rounded border border-stone-200 bg-stone-50 px-2.5 py-0.5 text-xs text-stone-600 font-mono transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:border-stone-400">Jenkins</span>
-                            <span class="rounded border border-stone-200 bg-stone-50 px-2.5 py-0.5 text-xs text-stone-600 font-mono transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:border-stone-400">Cloudflare</span>
-                            <span class="rounded border border-stone-200 bg-stone-50 px-2.5 py-0.5 text-xs text-stone-600 font-mono transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:border-stone-400">Git</span>
+                            <span class="rounded border border-stone-200 dark:border-stone-800 bg-stone-50 dark:bg-stone-900/60 px-2.5 py-0.5 text-xs text-stone-600 dark:text-stone-400 font-mono">Docker</span>
+                            <span class="rounded border border-stone-200 dark:border-stone-800 bg-stone-50 dark:bg-stone-900/60 px-2.5 py-0.5 text-xs text-stone-600 dark:text-stone-400 font-mono">Kubernetes</span>
+                            <span class="rounded border border-stone-200 dark:border-stone-800 bg-stone-50 dark:bg-stone-900/60 px-2.5 py-0.5 text-xs text-stone-600 dark:text-stone-400 font-mono">Jenkins</span>
+                            <span class="rounded border border-stone-200 dark:border-stone-800 bg-stone-50 dark:bg-stone-900/60 px-2.5 py-0.5 text-xs text-stone-600 dark:text-stone-400 font-mono">Cloudflare</span>
+                            <span class="rounded border border-stone-200 dark:border-stone-800 bg-stone-50 dark:bg-stone-900/60 px-2.5 py-0.5 text-xs text-stone-600 dark:text-stone-400 font-mono">Git</span>
                         </div>
                     </div>
                 </div>
+
+                <div class="w-full mt-8 border-b border-dashed border-zinc-300 dark:border-stone-700"></div>
             </section>
 
             <nav id="links" class="space-y-3 text-sm" aria-label="Social Links and Repositories">
                 <a href="https://github.com/lukas-sgx" target="_blank" rel="noopener noreferrer" title="Lukas' GitHub Profile" aria-label="Open Lukas' GitHub Profile"
-                   class="group flex items-center justify-between rounded-xl border border-stone-300 bg-stone-50/50 px-4 py-3.5 text-stone-800 transition-all duration-300 hover:bg-white hover:border-stone-400 hover:shadow-[0_4px_20px_rgba(0,0,0,0.02)] hover:-translate-y-0.5">
+                   class="group flex items-center justify-between rounded-xl border border-stone-200 dark:border-stone-800 bg-[#fafafa] dark:bg-[#1a1816] px-4 py-3.5 text-stone-800 dark:text-stone-200 transition-all duration-300 hover:bg-white dark:hover:bg-[#22201e] hover:border-stone-400 dark:hover:border-stone-700 hover:shadow-[0_4px_20px_rgba(0,0,0,0.01)] dark:hover:shadow-[0_4px_25px_rgba(0,0,0,0.3)] hover:-translate-y-0.5">
                     <div class="flex items-center gap-4">
-                        <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-stone-200 bg-white text-stone-700 transition-colors duration-300 group-hover:border-stone-300">
+                        <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-stone-200/80 dark:border-stone-800 bg-white dark:bg-[#141210] text-stone-700 dark:text-stone-300 transition-colors duration-300 group-hover:border-stone-300 dark:group-hover:border-stone-700">
                             <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v 3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
                         </div>
                         <div class="text-left">
-                            <div class="font-medium tracking-tight text-stone-900">GitHub Profile</div>
-                            <div class="text-xs text-stone-400 font-mono">github.com/lukas-sgx</div>
+                            <div class="font-medium tracking-tight text-stone-900 dark:text-stone-100">GitHub Profile</div>
+                            <div class="text-xs text-stone-400 dark:text-stone-400 font-mono mt-0.5">github.com/lukas-sgx</div>
                         </div>
                     </div>
-                    <span class="text-[10px] font-mono uppercase tracking-wider text-stone-500 bg-stone-100 px-2 py-0.5 rounded border border-stone-200">
+                    <span class="text-[10px] font-mono uppercase tracking-wider text-stone-500 dark:text-stone-400 bg-stone-100 dark:bg-stone-800 px-2 py-0.5 rounded border border-stone-200 dark:border-stone-700/60">
                         → Core
                     </span>
                 </a>
 
                 <a href="https://github.com/lukas-sgx/GBA-SDK" target="_blank" rel="noopener noreferrer" title="View GBA-SDK Repository" aria-label="View GBA-SDK project on GitHub"
-                   class="group flex items-center justify-between rounded-xl border border-stone-200/80 bg-white px-4 py-3.5 text-stone-800 transition-all duration-300 hover:border-stone-300 hover:shadow-[0_4px_20px_rgba(0,0,0,0.01)] hover:-translate-y-0.5">
+                   class="group flex items-center justify-between rounded-xl border border-stone-200 dark:border-stone-800/80 bg-[#fafafa] dark:bg-[#1a1816] px-4 py-3.5 text-stone-800 dark:text-stone-200 transition-all duration-300 hover:bg-white dark:hover:bg-[#22201e] hover:border-stone-400 dark:hover:border-stone-700 hover:shadow-[0_4px_20px_rgba(0,0,0,0.01)] dark:hover:shadow-[0_4px_25px_rgba(0,0,0,0.3)] hover:-translate-y-0.5">
                     <div class="flex items-center gap-4">
-                        <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-stone-200 bg-stone-50 text-stone-500 transition-colors group-hover:text-stone-700">
+                        <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-stone-200/80 dark:border-stone-800 bg-white dark:bg-[#141210] text-stone-500 dark:text-stone-400 transition-colors group-hover:border-stone-300 dark:group-hover:border-stone-700">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 5h10a2 2 0 012 2v10a2 2 0 01-2 2H7a2 2 0 01-2-2V7a2 2 0 012-2zM9 9h6v6H9V9z"/></svg>
                         </div>
                         <div class="text-left">
-                            <div class="font-medium tracking-tight text-stone-900 group-hover:text-stone-700 transition-colors">GBA - SDK Project</div>
-                            <div class="text-xs text-stone-400">Embedded toolchain and bare-metal framework for ARM7TDMI</div>
+                            <div class="font-medium tracking-tight text-stone-900 dark:text-stone-100 transition-colors">GBA - SDK Project</div>
+                            <div class="text-xs text-stone-400 dark:text-stone-400 mt-0.5">Embedded toolchain and bare-metal framework for ARM7TDMI</div>
                         </div>
                     </div>
-                    <span class="text-[10px] font-mono text-stone-400 group-hover:text-stone-600 transition-colors">ARM / C</span>
+                    <span class="text-[10px] font-mono text-stone-400 dark:text-stone-500 group-hover:text-stone-600 transition-colors">ARM / C</span>
                 </a>
 
                 <a href="https://www.linkedin.com/in/lukas-soigneux/" target="_blank" rel="noopener noreferrer" title="LinkedIn Profile" aria-label="Connect with Lukas on LinkedIn"
-                   class="group flex items-center justify-between rounded-xl border border-stone-200/80 bg-white px-4 py-3.5 text-stone-800 transition-all duration-300 hover:border-stone-300 hover:shadow-[0_4px_20px_rgba(0,0,0,0.01)] hover:-translate-y-0.5">
+                   class="group flex items-center justify-between rounded-xl border border-stone-200 dark:border-stone-800/80 bg-[#fafafa] dark:bg-[#1a1816] px-4 py-3.5 text-stone-800 dark:text-stone-200 transition-all duration-300 hover:bg-white dark:hover:bg-[#22201e] hover:border-stone-400 dark:hover:border-stone-700 hover:shadow-[0_4px_20px_rgba(0,0,0,0.01)] dark:hover:shadow-[0_4px_25px_rgba(0,0,0,0.3)] hover:-translate-y-0.5">
                     <div class="flex items-center gap-4">
-                        <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-stone-200 bg-stone-50 text-stone-500 transition-colors group-hover:text-stone-700">
+                        <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-stone-200/80 dark:border-stone-800 bg-white dark:bg-[#141210] text-stone-500 dark:text-stone-400 transition-colors group-hover:border-stone-300 dark:group-hover:border-stone-700">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.39v-1.2h-2.5v8.5h2.5v-4.34c0-.77.62-1.4 1.4-1.4a1.4 1.4 0 0 1 1.4 1.4v4.34h2.5M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.5H5.5v8.5h2.77z"/></svg>
                         </div>
                         <div class="text-left">
-                            <div class="font-medium tracking-tight text-stone-900 group-hover:text-stone-700 transition-colors">LinkedIn</div>
-                            <div class="text-xs text-stone-400">Professional updates & networking</div>
+                            <div class="font-medium tracking-tight text-stone-900 dark:text-stone-100 transition-colors">LinkedIn</div>
+                            <div class="text-xs text-stone-400 dark:text-stone-400 mt-0.5">Professional updates & networking</div>
                         </div>
                     </div>
-                    <span class="text-stone-300 group-hover:text-stone-400 font-mono text-xs transition-colors">→</span>
+                    <svg class="w-4 h-4 text-stone-400 dark:text-stone-500 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg>
                 </a>
 
                 <a href="assets/CV_Lukas_Soigneux.pdf" target="_blank" title="Download Resume PDF" aria-label="Download Lukas' Technical CV as PDF"
-                   class="group flex items-center justify-between rounded-xl border border-stone-200/80 bg-white px-4 py-3.5 text-stone-800 transition-all duration-300 hover:border-stone-300 hover:shadow-[0_4px_20px_rgba(0,0,0,0.01)] hover:-translate-y-0.5">
+                   class="group flex items-center justify-between rounded-xl border border-stone-200 dark:border-stone-800/80 bg-[#fafafa] dark:bg-[#1a1816] px-4 py-3.5 text-stone-800 dark:text-stone-200 transition-all duration-300 hover:bg-white dark:hover:bg-[#22201e] hover:border-stone-400 dark:hover:border-stone-700 hover:shadow-[0_4px_20px_rgba(0,0,0,0.01)] dark:hover:shadow-[0_4px_25px_rgba(0,0,0,0.3)] hover:-translate-y-0.5">
                     <div class="flex items-center gap-4">
-                        <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-stone-200 bg-stone-50 text-stone-500 transition-colors group-hover:text-stone-700">
+                        <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-stone-200/80 dark:border-stone-800 bg-white dark:bg-[#141210] text-stone-500 dark:text-stone-400 transition-colors group-hover:border-stone-300 dark:group-hover:border-stone-700">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
                         </div>
                         <div class="text-left">
-                            <div class="font-medium tracking-tight text-stone-900 group-hover:text-stone-700 transition-colors">Curriculum Vitae</div>
-                            <div class="text-xs text-stone-400">View standalone technical CV</div>
+                            <div class="font-medium tracking-tight text-stone-900 dark:text-stone-100 transition-colors">Curriculum Vitae</div>
+                            <div class="text-xs text-stone-400 dark:text-stone-400 mt-0.5">View standalone technical CV</div>
                         </div>
                     </div>
-                    <span class="text-[10px] font-mono text-stone-400">PDF</span>
+                    <span class="text-[10px] font-mono text-stone-400 dark:text-stone-500 bg-stone-100 dark:bg-stone-800 px-2 py-0.5 rounded border border-stone-200 dark:border-stone-700/60">
+                        PDF
+                    </span>
                 </a>
 
                 <a href="mailto:lukas.soigneux@epitech.eu" title="Email Lukas" aria-label="Send an email to Lukas"
-                   class="group flex items-center justify-between rounded-xl border border-stone-200/80 bg-white px-4 py-3.5 text-stone-800 transition-all duration-300 hover:border-stone-300 hover:shadow-[0_4px_20px_rgba(0,0,0,0.01)] hover:-translate-y-0.5">
+                   class="group flex items-center justify-between rounded-xl border border-stone-200 dark:border-stone-800/80 bg-[#fafafa] dark:bg-[#1a1816] px-4 py-3.5 text-stone-800 dark:text-stone-200 transition-all duration-300 hover:bg-white dark:hover:bg-[#22201e] hover:border-stone-400 dark:hover:border-stone-700 hover:shadow-[0_4px_20px_rgba(0,0,0,0.01)] dark:hover:shadow-[0_4px_25px_rgba(0,0,0,0.3)] hover:-translate-y-0.5">
                     <div class="flex items-center gap-4">
-                        <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-stone-200 bg-stone-50 text-stone-500 transition-colors group-hover:text-stone-700">
+                        <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg border border-stone-200/80 dark:border-stone-800 bg-white dark:bg-[#141210] text-stone-500 dark:text-stone-400 transition-colors group-hover:border-stone-300 dark:group-hover:border-stone-700">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
                             </svg>
                         </div>
                         <div class="text-left">
-                            <div class="font-medium tracking-tight text-stone-900 transition-colors">Get in Touch</div>
-                            <div class="text-xs text-stone-400">lukas.soigneux@epitech.eu · Fast async response</div>
+                            <div class="font-medium tracking-tight text-stone-900 dark:text-stone-100 transition-colors">Get in Touch</div>
+                            <div class="text-xs text-stone-400 dark:text-stone-400 mt-0.5">lukas.soigneux@epitech.eu · Fast async response</div>
                         </div>
                     </div>
-                    <span class="text-stone-300 group-hover:text-stone-400 font-mono text-xs transition-colors">→</span>
+                    <svg class="w-4 h-4 text-stone-400 dark:text-stone-500 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg>
                 </a>
             </nav>
         </section>
